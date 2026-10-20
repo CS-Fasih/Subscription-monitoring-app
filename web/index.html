@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A clearer view of your subscriptions. Track renewals, understand recurring costs, and make room in your budget with Tally.">
+  <meta name="theme-color" content="#20634C">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Tally">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Tally — Subscription monitor</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body { margin: 0; background: #f7f8fa; }
+    #loading { position: fixed; inset: 0; display: grid; place-content: center; text-align: center; color: #182923; font: 14px system-ui, sans-serif; }
+    #loading img { width: 56px; height: 56px; margin: 0 auto 22px; border-radius: 14px; }
+    #loading h1 { font-size: 30px; letter-spacing: -1px; margin: 0 0 12px; }
+    #loading p { color: #65726b; padding: 0 24px; max-width: 340px; line-height: 1.6; }
+    #loading button { border: 0; background: #20634c; color: white; padding: 12px 20px; border-radius: 8px; cursor: pointer; }
+    @media (prefers-reduced-motion: no-preference) { #loading img { animation: breathe 1.7s ease-in-out infinite alternate; } }
+    @keyframes breathe { from { opacity: .65; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <div id="loading" role="status" aria-live="polite">
+    <img src="icons/Icon-192.png" alt="">
+    <h1>tally</h1>
+    <p id="loading-message">Getting your workspace ready.</p>
+  </div>
+  <noscript>Tally needs JavaScript to display your private subscription workspace.</noscript>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
